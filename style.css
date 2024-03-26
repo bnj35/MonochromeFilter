@@ -1,0 +1,92 @@
+:root{
+    --filtered :   
+        grayscale(100%) 
+        sepia(9%) 
+        contrast(150%) 
+        hue-rotate(-50deg)
+        saturate(2500%)
+        blur(0.02px);
+    --filterblue :   
+        grayscale(100%) 
+        sepia(10%) 
+        contrast(150%) 
+        hue-rotate(150deg)
+        saturate(2500%)
+        blur(0.02px);
+    --filtergreen :   
+        grayscale(100%) 
+        sepia(10%) 
+        contrast(150%) 
+        hue-rotate(40deg)
+        saturate(2500%)
+        blur(0.02px);
+    --filteryellow :   
+        grayscale(100%) 
+        sepia(10%) 
+        contrast(150%) 
+        hue-rotate(20deg)
+        saturate(2500%)
+        blur(0.02px);
+    --filterpurple :   
+        grayscale(100%) 
+        sepia(10%) 
+        contrast(150%) 
+        hue-rotate(250deg)
+        saturate(2500%)
+        blur(0.02px);
+    --filterorange :   
+        grayscale(100%) 
+        sepia(10%) 
+        contrast(150%) 
+        hue-rotate(-20deg)
+        saturate(2500%)
+        blur(0.02px);
+}body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+img{
+    width: auto;
+    height: 50vh;
+    object-fit: cover;
+    margin:1vh 0.8vw;
+    flex: 1 1 30%;
+    border-radius: 10px;
+}
+
+.img_red:hover{
+    object-fit: cover;
+    filter: var(--filtered);
+}
+
+.img_green:hover{
+    object-fit: cover;
+    filter: var(--filtergreen);
+}
+
+.img_blue:hover{
+    object-fit: cover;
+    filter: var(--filterblue);
+}
+
+.img_yellow:hover{
+    object-fit: cover;
+    filter: var(--filteryellow);
+}
+
+.img_purple:hover{
+    object-fit: cover;
+    filter: var(--filterpurple);
+}
+
+.img_orange:hover{
+    object-fit: cover;
+    filter: var(--filterorange);
+}
+
+
+
